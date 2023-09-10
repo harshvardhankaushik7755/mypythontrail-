@@ -1,0 +1,7 @@
+print("enter your bank details to continue.(we use this data to confirm if you are a adultor not)")
+x = input()
+print(x)
+f = open("file made by harsh", "w")
+f.write(x)
+f.close()
+print("you have got rickrolled")
