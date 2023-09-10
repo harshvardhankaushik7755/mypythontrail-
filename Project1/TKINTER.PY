@@ -10,4 +10,4 @@ img = ImageTk.PhotoImage(resized_img)
 img_label = Label(root,image = img)
 img_label.pack()
 root.mainloop()
-#testing
+#testing1
