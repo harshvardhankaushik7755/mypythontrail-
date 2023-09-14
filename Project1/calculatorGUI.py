@@ -43,7 +43,6 @@ def get_result():
 root = Tk()
 
 root.title("calculator")
-root.geometry("280x380")
 root.resizable(0,0)
 root.configure(background="black")
 
