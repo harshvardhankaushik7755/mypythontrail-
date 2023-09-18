@@ -25,8 +25,8 @@ screen_width = 1200
 screen_height = 600
 gameWindow = pygame.display.set_mode((screen_height,screen_height))
 white = (255,255,255)
-black = (255,0,0)
-red = (0,0,0)
+red = (255,0,0)
+black = (0,0,0)
 
 pygame.display.set_caption("Snake Game")
 pygame.display.update()
@@ -36,15 +36,27 @@ game_over = False
 snake_x = 45
 snake_y = 55
 snake_size = 10
+clock = pygame.time.Clock()
+fps = 30
 
 while not exit_game:
     for event in pygame.event.get():
+        # print(event)
         if event.type==pygame.QUIT:
+            # print(event.type)
             exit = True
-
-    gameWindow.fill(white)
-    pygame.draw.rect(gameWindow, black, [snake_x, snake_y, snake_size, snake_size])
+        if  event.type == pygame.KEYDOWN:
+            # print(event.type)
+            if event.key == pygame.K_RIGHT:
+                # print(event.key)
+                print(snake_x)
+                snake_x = snake_x + 10
+                print(snake_x)
+                
+    gameWindow.fill(black)
+    pygame.draw.rect(gameWindow, red, [snake_x, snake_y, snake_size, snake_size])
     pygame.display.update()
+    clock.tick(fps)
     
 pygame.quit()
 quit()    
