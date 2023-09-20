@@ -1,4 +1,4 @@
-import pygame
+import pygame   
 import random
 
 pygame.mixer.init()
@@ -119,7 +119,7 @@ def gameloop():
                 food_x = random.randint(20, screen_width/2)
                 snk_length+=5
     
-            if snake_x<0 or snake_x>screen_width or snake_y<0 or snake_y<screen_height:
+            if snake_x<0 or snake_x>screen_width or snake_y<0 or snake_y>screen_height:
                 game_over = True
                 print("Game Over")   
             gameWindow.fill(black)    
