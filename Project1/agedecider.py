@@ -61,3 +61,15 @@ if __name__=='__main__':
         else:             
             print("THANK YOU FOR USING AGE DECIDER")
             continue
+        
+#         from tkinter import *
+# from tkinter import filedialog
+
+# root = Tk()
+# root.geometry("600x600")
+# root.title("notepad")
+# root.config(bg = "lightblue")
+# root.resizable(False, False)
+# b1 = Button(root, width = "20", height="")
+
+# root.mainloop()
