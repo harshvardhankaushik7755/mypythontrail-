@@ -103,7 +103,7 @@ def gameloop():
 #GameOverScreen
 
            gameWindow.blit(outro, (0, 0))
-           text_screen("Score: " + str(score ), snakegreen, 385, 350)
+           text_screen("Score: " + str(score), snakegreen, 385, 350)
            for event in pygame.event.get():
                if event.type == pygame.QUIT:
                    exit_game = True
