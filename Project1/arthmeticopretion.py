@@ -20,7 +20,7 @@ if __name__ == '__main__':
         print("Choose anyone of the four mathematical opreation: add, sub, mul, div")
         l = input()
         if (l=='add' or l=='sub' or l=='mul' or l=='div'):
-            print("Enter the first number: ")
+            print("Enter the first number: ")            
             a=input()
             print("Enter the second number: ")   
             b = input()
