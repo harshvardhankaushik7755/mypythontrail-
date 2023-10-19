@@ -27,13 +27,13 @@ if __name__ == '__main__':
             a = int(a)
             b = int(b)        
             if (l == 'add'):
-                    add(a,b)
+                add(a,b)
             elif (l == 'sub'):
-                    sub(a,b)
+                sub(a,b)
             elif (l == 'mul'):
-                    mul(a,b)
+                mul(a,b)
             elif (l == 'div'): 
-                    div(a,b)
+                div(a,b)
         elif(l!= 'exit'):
             print(l +" is not a corect opretion choose another option please")
         else:
