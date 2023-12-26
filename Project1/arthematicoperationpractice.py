@@ -1,4 +1,5 @@
 import math 
+from fractions import Fraction
 
 def add(a, b):
     sum = a+b
@@ -44,24 +45,32 @@ def root(a, b):
     root = math.pow(a, 1/b)
     print("root: ", root) 
     
+def floor(a, b):
+    flor =a//b
+    print("floor: ", flor)
+    
+def frac_add(a, b):
+    a= Fraction(input())
+    b = Fraction(input())
+    add = a+b
+    print("Sum of fractions: ", add)
+    
 if __name__ == "__main__":
     l = None
     while(l!="exit"):
         print("If your operation requires a single parametre press 'O', if multi parametre operation press 'M'")
         l = input()
         if l == "M":
-            print("Choose any one operation from :'add', 'sub', 'mul', 'div', 'percentage', 'power', 'root'")
+            print("Choose any one operation from :'add', 'sub', 'mul', 'div', 'percentage', 'power', 'root', 'floor', 'addition of fractions'")
             l = input()
-            if(l == "add" or l == "sub" or l=="mul" or l=="div" or l=="percentage" or l=="power" or l == "root"):
+            if(l == "add" or l == "sub" or l=="mul" or l=="div" or l=="percentage" or l=="power" or l == "root" or l== "floor" or l=="addition of fractions"):
                 
                 print("Enter first no:, if percent take part of the whole no.")
                 a = input()
                 print("Enter second no:, if percent whole no.")
                 b = input()    
                 a = int(a)
-                a = float(a)
                 b = int(b)
-                b = float(b)
                 if l=="add":
                     add(a, b)
                 if l=="sub":
@@ -76,6 +85,11 @@ if __name__ == "__main__":
                     pow(a, b)
                 if l == "root":
                     root(a, b)
+                if l=="floor":
+                    floor(a, b)
+                    
+                if l == "addition of fractions":
+                    frac_add(a, b)
                     
         elif l == "O":
             print("Chose operations in cube, square, cube_root, sqrt and power")
