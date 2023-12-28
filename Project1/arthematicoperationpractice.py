@@ -61,9 +61,9 @@ if __name__ == "__main__":
         print("If your operation requires a single parametre press 'O', if multi parametre operation press 'M'")
         l = input()
         if l == "M":
-            print("Choose any one operation from :'add', 'sub', 'mul', 'div', 'percentage', 'power', 'root', 'floor', 'addition of fractions'")
+            print("Choose any one operation from :'add', 'sub', 'mul', 'div', 'percentage', 'power', 'root', 'floor'")
             l = input()
-            if(l == "add" or l == "sub" or l=="mul" or l=="div" or l=="percentage" or l=="power" or l == "root" or l== "floor" or l=="addition of fractions"):
+            if(l == "add" or l == "sub" or l=="mul" or l=="div" or l=="percentage" or l=="power" or l == "root" or l== "floor"):
                 
                 print("Enter first no:, if percent take part of the whole no.")
                 a = input()
@@ -88,9 +88,7 @@ if __name__ == "__main__":
                 if l=="floor":
                     floor(a, b)
                     
-                if l == "addition of fractions":
-                    frac_add(a, b)
-                    
+        
         elif l == "O":
             print("Chose operations in cube, square, cube_root, sqrt and power")
             l = input()    
