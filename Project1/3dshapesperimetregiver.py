@@ -24,6 +24,7 @@ if __name__ == "__main__":
             if userinput == "pofcube" or userinput == "cofsphere":
                 print("Enter the no.")
                 userinputasnum1 = input()
+                userinputasnum1 = int(userinputasnum1)
                 if userinput == "pofcube":
                     perimetreOfCube(userinputasnum1)
                 if userinput == "cofsphere":
