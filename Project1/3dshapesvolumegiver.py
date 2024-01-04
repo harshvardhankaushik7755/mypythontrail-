@@ -21,7 +21,7 @@ if __name__ == "__main__":
         if userinput == "O":
             print("Choose operations in vofcube, vofsphere")
             userinput = input()
-            if  userinput == "vofcube" or userinput == "vofsphere":
+            if  userinput == "pofcube" or userinput == "cofsphere":
                 print("Enter first no. ")
                 userinputasnum1 = input()
                 userinputasnum1 = int(userinputasnum1)
