@@ -21,7 +21,7 @@ if __name__ == "__main__":
         if userinput == "y":
             print("Write your angles measurement")
             userinput = input()
-            userinput = int(userinput)
+            userinput = float(userinput)
             if userinput <90:
                 acuteAngle(userinput)
             elif userinput == 360:
