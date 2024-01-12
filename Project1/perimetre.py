@@ -33,7 +33,7 @@ if __name__ == "__main__":
                 userinputasnum1 = int(userinputasnum1)
                 userinputasnum2 = int(userinputasnum2)
             if userinput == "pofrectangle":
-                    perimetreOfRectangle(userinputasnum1, userinputasnum2)
+                perimetreOfRectangle(userinputasnum1, userinputasnum2)
                     
         elif userinput == "M":
             print("Choose operations in poftriangle")
