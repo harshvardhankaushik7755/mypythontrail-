@@ -11,9 +11,24 @@ def DAYS(userinput):
         print("HAPPY NATIONAL BIRD DAY")
     elif userinput == "6th January":
         print("HAPPY CALENDER DAY")
-        
-    
-        
+    elif userinput == "7th January":
+        print("HAPPY OLD ROCK DAY")
+    elif userinput == "8th January":
+        print("HAPPY EARTH ROTATION DAY")
+    elif userinput == "9th January":
+        print("HAPPY PRAVASI BHARATIYA DIVAS")
+    elif userinput == "10th January":
+        print("HAPPY WORLD HINDI DAY")
+    elif userinput == "11th January":
+        print("HAPPY NATIONAL MILK DAY")
+    elif userinput == "12th January":
+        print("HAPPY SWAMI VIVEKANANDA JAYANTI")
+    elif userinput == "13th January":
+        print("HAPPY LOHRI AND THE DATE OF THIS PROJECT STARTING")
+    elif userinput == "14th January":
+        print("HAPPY MAKAR SANKRANTI")
+    elif userinput == "15th January":
+        print("HAPPY NATIONAL DAY")
         
 if __name__ == "__main__":
     userinput = None
