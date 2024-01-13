@@ -48,13 +48,21 @@ def hollowrectangle(l ,b):
         for col in range(1, b+1):
             if row == 1 or row == l or col == b or col == 1:
                 print("*", end=" ")
-                
             else:
                 print(" ", end=" ")
                 
         print()
         
-        
+def hollow_triangle(n):
+  
+    for i in range(1, n + 1):
+        for j in range(1, 2 * n):
+            if i == n or i + j == n + 1 or j - i == n - 1:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+                
         
 if __name__ == "__main__":
     userinput = None
@@ -62,20 +70,27 @@ if __name__ == "__main__":
         print("If your shape is hollow then write H, if solid write S.")
         userinput = input()
         if userinput == "H":
-                print("choose the shape 'hollow triangle' or 'hollow square' or 'hollow rectangle'")
+                print("choose the shape or 'hollow square' or 'hollow rectangle'")
                 userinput = input()
-                if userinput == "hollow triangle" or userinput == "hollow square" or userinput == "hollow rectangle":
+                if userinput == "hollow square" or userinput == "hollow rectangle":
                     print("enter the no. of rows")
-                    userinputasnum = input()
-                    userinputasnum = int(userinputasnum)
+                    userinputasnum1 = input()
+                    userinputasnum1 = int(userinputasnum1)
                     print("Enter the no. of cols: ")
                     userinputasnum2 = input()
                     userinputasnum2 = int(userinputasnum2)
                     if userinput == "hollow square":
-                        hollowsquare(userinputasnum, userinputasnum2)
+                        hollowsquare(userinputasnum1, userinputasnum2)
                     elif userinput == "hollow rectangle":
-                        hollowrectangle(userinputasnum, userinputasnum2)
-                        
+                        hollowrectangle(userinputasnum1, userinputasnum2)
+                if userinput == "hollow triangle":
+                    print("enter the no.")
+                    userinputasnum1 = input()
+                    userinputasnum1 = int(userinputasnum1)
+                    if userinput == "hollow triangle":
+                        hollow_triangle(userinputasnum1)
+                    
+                    
                 print("choose the shapes in hollow rectangle")
                 userinput = input()
                 if userinput == "hollow rectangle":
@@ -107,7 +122,6 @@ if __name__ == "__main__":
                     rect(userinputasnum1, userinputasnum2)
 
                         
-            
         elif userinput!="exit":
             print("Wrong input")
             
